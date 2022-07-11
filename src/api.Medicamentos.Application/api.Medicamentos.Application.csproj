@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>api.Medicamentos</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\api.Medicamentos.Domain\api.Medicamentos.Domain.csproj" />
+    <ProjectReference Include="..\api.Medicamentos.Application.Contracts\api.Medicamentos.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Abp.EntityFrameworkCore" Version="7.3.0" />
+    <PackageReference Include="Volo.Abp.Account.Application" Version="5.3.2" />
+    <PackageReference Include="Volo.Abp.Identity.Application" Version="5.3.2" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="5.3.2" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Application" Version="5.3.2" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="5.3.2" />
+    <PackageReference Include="Volo.Abp.SettingManagement.Application" Version="5.3.2" />
+  </ItemGroup>
+
+</Project>
